@@ -1,0 +1,16 @@
+.container{
+    padding: 80px;
+
+    flex-flow: column nowrap;
+    gap: 10px;
+
+}
+
+.container i{
+    color: red;
+    font-size: 200px;
+}
+
+.container h2{
+    font-size: 44px;
+}

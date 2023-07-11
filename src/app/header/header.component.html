@@ -1,0 +1,51 @@
+<header class="main-header flex">
+
+    <div class="flex main-header__container">
+
+        <h1 class="main-header__title" routerLink="produtos">
+            <span class="main-header__title--blue">GP</span>
+            <span class="main-header__title--orange">Computers</span>
+        </h1>
+
+        <div class=" flex container-menu">
+
+            <nav class="flex main-header__menu">
+                <ul class="flex main-header__list">
+                    <li>
+                        <a routerLink="produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="flex carrinho-content" routerLink="carrinho">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="carrinho-text">  Carrinho </span> 
+                            <span class="badge-carrinho"> {{ getQuantidadeItens() }} </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="contato">Contato</a>
+                    </li>
+
+                    <!-- <li> <a> <i class="fa-brands fa-facebook"></i> </a> </li> -->
+
+                    <!-- <li> <a> <i class="fa-brands fa-instagram"></i> </a> </li> -->
+
+                    <!-- <li> <a> <i class="fa-brands fa-twitter"></i> </a> </li> -->
+
+                    <!-- <li> <a> <i class="fa-brands fa-linkedin"></i> </a> </li> -->
+
+                </ul>
+            </nav>
+
+            <!-- MENU  -->
+            <!-- <i class="fa-solid fa-bars"></i> -->
+
+            <!-- Close -->
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+
+        </div>
+
+    </div>
+
+    <app-barra-pesquisa />
+
+</header>

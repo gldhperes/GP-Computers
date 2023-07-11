@@ -1,1 +1,190 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, "sans-serif";
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+:root {
+    --orange: #ff7000;
+    --blue: #004a76;
+    --dark-blue: #002d47;
+    --gray: rgba(88, 89, 91, 1);
+    --light-gray: rgba(232, 232, 232, 1);
+    --light-gray-2: rgb(247, 247, 247);
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    /* HEADER */
+    .main-header {
+        align-items: center !important;
+    }
+
+    .main-header__container {
+        flex-flow: column !important;
+        justify-content: center !important;
+
+    }
+
+    .container-menu {
+        align-items: center !important;
+    }
+
+    /* PRODUTOS */
+
+    .product-list {
+        padding: 50px 20px !important;
+        justify-content: center !important;
+    }
+
+    .product-list__card {
+        width: 280px !important;
+    }
+
+
+    /* CARRINHO */
+    .cart-description {
+        flex-flow: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+
+    /* CONTATO */
+    .contact__title {
+        text-align: center !important;
+    }
+
+    .contact-form {
+        align-items: center !important;
+    }
+
+    .contact__container {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* HEADER */
+    /* .main-header__container {
+        flex-flow: row !important;
+        justify-content: space-between !important;
+    } */
+
+
+    /* PRODUCT DETAILS */
+    .product__container {
+        flex-flow: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .product__container img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .product-description__container {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    /* CARRINHO */
+    .cart-description {
+        font-size: medium !important;
+    }
+
+
+    /* FOOTER */
+    .footer__container {
+        padding: 20px 40px !important;
+
+        flex-flow: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 20px !important;
+
+        text-align: center !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    /* HEADER */
+    .main-header__title {
+        font-size: 40px !important;
+    }
+
+    .main-header__menu a {
+        font-size: 18px !important;
+    }
+
+    .carrinho-text{
+        display: none !important;
+    }
+
+    /* PRODUTOS */
+    .product-list__card img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* PRODUCT DETAILS */
+    .product__container img {
+        width: 230px !important;
+        height: 230px !important;
+    }
+
+    /* CARRINHO */
+    .cart-description {
+        font-size: small !important;
+    }
+
+    .remove-button {
+        padding: 10px !important;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    /* FOOTER */
+    .footer__about-text {
+        width: 250px !important;
+        font-size: medium !important;
+    }
+}

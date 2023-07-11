@@ -1,0 +1,79 @@
+.main-header { 
+    width: 100%;   
+    padding: 15px 0px;
+
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 25px;
+
+    /* background-color: aqua; */
+}
+
+.main-header__container{
+    width: 100%;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.main-header__title {    
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.main-header__title--blue {
+    color: var(--blue);
+}
+
+.main-header__title--orange {
+    color: var(--orange);
+}
+
+.main-header__menu ul {
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.main-header__menu a {
+    cursor: pointer;
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: large;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--blue);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.container-menu {
+    flex-flow: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.badge-carrinho {
+    background-color: var(--blue);
+    padding: 5px 10px;    
+    border-radius: 4px;
+    color: white;
+}
+
+
+.main-header > app-barra-pesquisa{
+    width: 100%;
+}
+
+
+.carrinho-content{
+    flex-flow: row;
+    gap: 3px;
+}
+
+
+.carrinho-text{
+    display: block;
+}
